@@ -21,12 +21,18 @@
 }
 .dropdown-item{
     color: #ffffff !important;
+    background-color: transparent !important;
+}
+.dropdown-item:hover{
+    color: #ff0000 !important;
+    
 }
 
 .dropdown-menucustom{
     padding-top: 5px !important;
     background-color: rgb(8, 68, 129);
     border: none;
+    
     
 }
 
@@ -61,12 +67,29 @@ color: red;
   }
 }
 
-.dropdown:hover .more1{
-  display: none;
-}
-.more2{
-  display: none;
-}
-.dropdown:hover .more2{
-    display: inline-block;
+
+
+
+
+  .dropdown2{
+    display: none;
+   }  
+
+  .dropdown2 li{
+   padding-left: 15px;
+  }  
+
+  @media screen and (max-width: 985px) {
+    
+    .smallhide{
+        display:none;
+    }
+
+    .dropdown2{
+        display: inline-block;
+       } 
+       
+
   }
+
+ 
