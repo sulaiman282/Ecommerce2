@@ -7,7 +7,8 @@ import 'bootstrap/dist/js/bootstrap';
 import Topheader from './Components/Topheader';
 import Navbar from './Components/Navbar';
 import Navbar2 from './Components/Navbar2';
-import Texttest from './Components/Texttest';
+import Texttest from './Components/Courasel';
+import Categoryhome from './Components/Categoryhome';
 
 
 function App() {
@@ -34,6 +35,7 @@ const toggleMode=()=>{
     <Navbar2></Navbar2>
 
     <Texttest/>
+    <Categoryhome/>
     </div>
   );
 }
