@@ -1,18 +1,24 @@
-.categorymainbody{
-    display: flex;
-}
-.category1{
- 
-}
-
-.category2{
-    
+.Categoryhome img{
+ border-radius: 10px;
+ border: 2px solid rgba(0, 0, 0, 0.253) ;
+ height: 85%;
 }
 
-.category3{
-    
+
+
+.textgray a{
+    color: rgb(0, 0, 0);
+    font-size: 14px;
 }
 
-.category4{
-    
+.textgray a:hover{
+    color: rgba(255, 0, 0, 0.5);
+}
+
+.blacktext a{
+    font-size: 14px;
+}
+
+.blacktext a:hover{
+    color: rgb(255, 0, 0);
 }

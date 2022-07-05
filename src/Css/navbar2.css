@@ -1,6 +1,9 @@
 .navbar2body{
   background-color: rgb(8, 68, 129);
   height: 35px;
+  position: sticky;
+  top: 69px;
+  z-index: 1111;
  
 }
 
