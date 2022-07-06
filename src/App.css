@@ -1,6 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
 
 
+::-webkit-scrollbar{
+  width:4px;
+  overflow:visible;
+
+}
+::-webkit-scrollbar:hover{
+  width:10px ;
+ 
+
+}
+
+::-webkit-scrollbar-track{
+background:transparent;
+}
+
+::-webkit-scrollbar-thumb{
+  background-image:linear-gradient(rgb(0, 14, 138),rgb(245, 2, 2));
+  border-radius: 25px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-image:linear-gradient(rgb(3, 18, 146),#0c08e6,#f00606);
+
+} 
 
 *{
   font-family: 'Work Sans', sans-serif;

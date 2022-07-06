@@ -6,7 +6,7 @@ export default function Topheader(props) {
   const [btntext, setBtnText] = useState(<i className="ps-2 far fa-sun"></i>);
 
   const modetext = () => {
-    if (props.mode == "light") {
+    if (props.mode === "light") {
       setBtnText(<i className="ps-2 far fa-sun"></i>);
     } else {
       setBtnText(<i className="ps-2 far fa-moon"></i>);
@@ -15,7 +15,7 @@ export default function Topheader(props) {
 
   return (
     <div className="topheaderbody d-flex align-items-center">
-      <div className={`container  d-flex justify-content-between`}>
+      <div className="container  d-flex justify-content-between">
         <div className="d-flex justify-content-start">
           <Typed
             className="typed-text downloadourapp"

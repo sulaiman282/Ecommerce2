@@ -1,10 +1,8 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
+import React from "react";
 import "../Css/navbar.css";
 import mainlogo from "../Images/mainlogo.png";
 
 export default function Navbar(props) {
-  console.log(props.mode);
 
   return (
     <div className="navbarbody d-flex align-items-center sticky-top">

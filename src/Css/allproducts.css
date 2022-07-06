@@ -1,0 +1,115 @@
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: space-between;
+  
+    
+  }
+  @media only screen and (max-width: 1195px) {
+     
+    .products-container {
+    
+      grid-template-columns: repeat(4, 1fr);
+    }
+    }
+  @media only screen and (max-width: 994px) {
+     
+  .products-container {
+  
+    grid-template-columns: repeat(3, 1fr);
+  }
+  }
+  @media only screen and (max-width: 765px) {
+     
+  .products-container {
+  
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  
+  }
+
+  .card{
+    margin: 5% 5% 0% 5%;
+    background-color: transparent;
+    }  
+      
+  .cart-image img {
+    width: 95%;
+    height: 100%;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+  }
+  .cart-image img:hover{
+    transform: scale(1.05);
+    border: 1px solid rgba(0, 0, 0, 0.5) ;
+  }
+
+
+  .card:hover{
+  border: 1px solid #848CD8;
+  }
+  
+  .card:hover .testtext2{
+  display: inline !important;
+  color: red;
+  
+  }
+  
+  
+  
+  
+  
+  
+  .card-description {
+    display: flex;
+    float: bottom;
+    align-items: flex-start;
+    flex-direction: column;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    padding: 5%;
+ 
+  }
+  .productlink{
+      text-decoration: none;
+     
+      font-size: 14px;
+   
+      width: 100%;
+  }
+  .price{
+    text-align: center;
+    width: 100%;
+    color:red;
+  }
+  .addcartbtn{
+    border: none;
+    background-color:transparent;
+  }
+  .addlistbtn{
+    border: none;
+    background-color:transparent;
+  }
+  
+  .addcartbtn:hover{
+ 
+    transform: scale(1.05);
+    color: red !important;
+   }
+   .addcartbtn:focus{
+    border: 1px solid rgba(20, 3, 255, 0.5) ;
+    transform: scale(1.05);
+    color: red !important;
+   }
+
+   .addlistbtn:hover{
+   
+    transform: scale(1.05);
+    color: red !important;
+   }
+   .addlistbtn:focus{
+    border: 1px solid rgba(0, 38, 255, 0.5) ;
+    transform: scale(1.05);
+    color: red !important;
+   }

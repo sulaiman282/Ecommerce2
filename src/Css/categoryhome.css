@@ -1,14 +1,20 @@
 .Categoryhome img{
  border-radius: 10px;
- border: 2px solid rgba(0, 0, 0, 0.253) ;
- height: 85%;
-}
 
+ height: 85%;
+ transition: transform .3s;
+
+}
+.Categoryhome img:hover{
+    border: 1px solid rgba(0, 0, 0, 0.5) ;
+    transform: scale(1.05);
+   }
 
 
 .textgray a{
     color: rgb(0, 0, 0);
     font-size: 14px;
+    text-align: center;
 }
 
 .textgray a:hover{
@@ -21,4 +27,7 @@
 
 .blacktext a:hover{
     color: rgb(255, 0, 0);
+}
+h5{
+    color: black;
 }
