@@ -6,6 +6,15 @@ import "../Css/hotdealproducts.css"
 
 
 export default function Hotdealproducts(props) {
+
+  var pathname = window.location.pathname;
+  pathname = pathname.substring(1);
+  
+  if(pathname==="hot_deals"){
+    document.title="TSHOP - HOT DEALS";
+  }
+  
+
     const [loading, setLoading] = useState(false);
     const [data, setData] = useState([]);
     var viewlimit=parseInt(props.Hotcount)

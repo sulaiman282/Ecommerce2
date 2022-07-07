@@ -20,6 +20,7 @@ import Advertisehome from "./Components/Advertisehome";
 import Recentposts from "./Components/Recentposts";
 import Footer from "./Components/Footer";
 import Login from "./Components/pages/Login";
+import Seemore from "./Components/Assets/Seemore"
 
 function App() {
   const [mode, setMode] = useState("dark");
@@ -41,7 +42,8 @@ function App() {
     <div className="App">
       <Topheader mode={mode} toggleMode={toggleMode} />
       <Navbar mode={mode} />
-      <Navbar2></Navbar2> 
+      <Navbar2/> 
+     
 
 <Routes>
         <Route path="*" element={<div><Courasel />
@@ -49,26 +51,43 @@ function App() {
         <Categoryhome mode={mode}/>
         <Titlewithtimer mode={mode} firstletter="H" title="OT DEALS" ctimer="1659983662000" />
         <Hotdealproducts mode={mode} Hotcount="10"/>
+        <Seemore mode={mode} turl={"./hot_deals"}/>
         <Advertisehome/>
         <Titleforcollection mode={mode} firstletter="T" title="RENDING PRODUCTS"/>
         <Allproducts mode={mode} productcount="10"/>
+        <Seemore mode={mode} turl={"./trending"}/>
         <Titleforcollection mode={mode} firstletter="O" title="UR BRANDS"/>
         <Brandslider/>
         <Titleforcollection mode={mode} firstletter="F" title="EATURED PRODUCTS"/>
         <Allproducts mode={mode} productcount="15"/>
+        <Seemore mode={mode} turl={"./new-arrivals"}/>
         <Titleforcollection mode={mode} firstletter="O" title="UR BLOG"/>
         <Recentposts mode={mode}/></div>} />
 
 
+        <Route exact path="/login" element={<div><Login/></div>} />
 
 
 
+        <Route exact path="/all_product" element={<div><Titleforcollection mode={mode} firstletter="A" title="LL PRODUCTS"/> <Allproducts mode={mode} productcount="200"/></div>} />
+
+
+
+        <Route exact path="/hot_deals" element={<div><Titlewithtimer mode={mode} firstletter="H" title="OT DEALS" ctimer="1659983662000" />
+        <Hotdealproducts mode={mode} Hotcount="50"/></div>} />
 
         
 
-        <Route path="/login" element={<div><Login/></div>} />
-        <Route exact path="/login" element={<div></div>} />
-        
+        <Route exact path="/trending" element={<div><Titleforcollection mode={mode} firstletter="T" title="RENDING PRODUCTS"/> <Allproducts mode={mode} productcount="50"/></div>} />
+
+        <Route exact path="/new-arrivals" element={<div><Titleforcollection mode={mode} firstletter="N" title="EW ARRIVAL PRODUCTS"/> <Allproducts mode={mode} productcount="50"/></div>} />
+
+
+
+
+
+
+
         <Route path="/000" element={<div></div>} />
         <Route exact path="/007" element={<div></div>} />
 

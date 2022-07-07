@@ -1,0 +1,15 @@
+.linkseemore{
+border: 1px solid rgb(0, 0, 0) !important;
+font: 14px !important;
+padding: 5px 15px 5px 15px;
+transition-duration: 0.5s ;
+background-color: transparent;
+}
+.linkseemore:hover{
+color :red !important; 
+background-color: rgb(5, 9, 75);
+}
+.linkseemore:focus{
+    color :red !important; 
+    background-color: rgb(5, 9, 75);
+    }

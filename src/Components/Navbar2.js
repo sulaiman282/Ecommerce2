@@ -21,75 +21,86 @@ export default function Navbar2() {
             aria-labelledby="dropdownMenuButton1"
           >
             <li>
-              <a className="dropdown-item" href="/">
+              <Link className="dropdown-item" to="/">
                 Cloths
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="dropdown-item" href="/">
+              <Link className="dropdown-item" to="/">
                 Electronics
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="dropdown-item" href="/">
+              <Link className="dropdown-item" to="/">
                 Furniture
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="dropdown-item" href="/">
+              <Link className="dropdown-item" to="/">
                 Shoes
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="dropdown-item" href="/">
+              <Link className="dropdown-item" to="/">
                 Others
-              </a>
+              </Link>
             </li>
+            <li>
+              <Link className="dropdown-item" to="/">
+              API Blank
+              </Link>
+            </li>
+            <li>
+              <Link className="dropdown-item" to="/">
+              API Blank
+              </Link>
+            </li>
+            
           </ul>
         </div>
 
         <div className="smallhide">
-          <a href="/">
+          <Link to="/all_product">
             <i className="fa-solid fa-store pe-2"></i>All Products
-          </a>
+          </Link>
         </div>
 
         <div>
-          <a href="/">
+          <Link to="/hot_deals">
             <i className="fa-solid fa-fire-flame-curved pe-2 text-danger"></i>
             Hot Deals
-          </a>
+          </Link>
         </div>
 
         <div>
-          <a href="/">
+          <Link to="/trending">
             <i className="fa-solid fa-arrow-trend-up pe-1 ps-1 text-warning"></i>
             Trending
-          </a>
+          </Link>
         </div>
 
         <div className="smallhide">
-          <a href="/">
+          <Link to="/new-arrivals">
             <i className="fa-solid fa-rocket pe-2"></i>New Arrivals
-          </a>
+          </Link>
         </div>
 
         <div className="smallhide">
-          <a href="/">
+          <Link to="/">
             <i className="fa-solid fa-blog pe-2"></i>Blog
-          </a>
+          </Link>
         </div>
 
         <div className="smallhide">
-          <a href="/">
+          <Link to="/">
             <i className="fa-solid fa-gear pe-2"></i>Services
-          </a>
+          </Link>
         </div>
 
         <div className="smallhide">
-          <a href="/">
+          <Link to="/">
             <i className="fa-solid fa-address-book pe-2"></i>Contact Us
-          </a>
+          </Link>
         </div>
 
         <div className="dropdown dropdown2">
@@ -108,33 +119,33 @@ export default function Navbar2() {
             aria-labelledby="dropdownMenuButton1"
           >
             <li>
-              <a href="/">
+              <Link to="/">
                 <i className="fa-solid fa-store pe-2"></i>All Products
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/">
+              <Link to="/">
                 <i className="fa-solid fa-rocket pe-2"></i>New Arrivals
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a href="/">
+              <Link to="/">
                 <i className="fa-solid fa-blog pe-2"></i>Blog
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/">
+              <Link to="/">
                 <i className="fa-solid fa-gear pe-2"></i>Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/">
+              <Link to="/">
                 <i className="fa-solid fa-address-book pe-2"></i>Contact Us
-              </a>
+              </Link>
             </li>
             <li>
-            <a href="/">
+            <a to="/">
               <i className="fas fa-user pe-2"></i>Login/Signup
             </a>
           </li>

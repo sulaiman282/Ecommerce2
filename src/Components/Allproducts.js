@@ -3,6 +3,25 @@ import axios from "axios";
 import "../Css/allproducts.css";
 
 export default function Allproducts(props) {
+
+  var pathname = window.location.pathname;
+  pathname = pathname.substring(1);
+  
+  if(pathname==="home"){
+    document.title="TSHOP - HOME";
+  }
+  else if(pathname==="all_product"){
+    document.title="TSHOP - PRODUCTS";
+  }
+  else if(pathname==="new-arrivals"){
+    document.title="TSHOP - NEW ARRIVALS";
+  }
+  else if(pathname==="trending"){
+    document.title="TSHOP - TRENDING";
+  }
+
+
+
     const [loading, setLoading] = useState(false);
     const [data, setData] = useState([]);
     var viewlimitp=parseInt(props.productcount)
