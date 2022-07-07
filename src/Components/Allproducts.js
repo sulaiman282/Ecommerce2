@@ -30,14 +30,21 @@ export default function Allproducts(props) {
           {loading && (
             <div>
               {" "}
-              <h1>Loading...</h1>
+              <img src="https://i.gifer.com/YCZH.gif" alt="Loading"   onError={({ currentTarget }) => {
+                currentTarget.onerror = null; 
+                currentTarget.src="https://i.stack.imgur.com/kOnzy.gif";
+              }}/>
             </div>
           )}
   
           {data.map((product) => (
             <div key={product.id} className="card d-flex  justify-content-center">
               <div className="cart-image d-flex  justify-content-center">
-                <img src={(product.images==="coffee.png")||product.image? "https://www.motorcyclevalley.com/photo/thumb/New-Suzuki-Gixxer-Carburetor.jpg":product.images} alt="#"
+                <img src={(product.images==="coffee.png")||product.image? "https://www.motorcyclevalley.com/photo/thumb/New-Suzuki-Gixxer-Carburetor.jpg":product.images} alt="#dd"
+                onError={({ currentTarget }) => {
+                  currentTarget.onError = null; 
+                  currentTarget.src="https://i.pinimg.com/originals/6d/a8/78/6da878cf7299317b2bd88c7471111626.gif";
+                }}
                />
               </div>
               <div className="card-description">

@@ -1,7 +1,7 @@
 import React from "react";
 import "../Css/navbar.css";
 import mainlogo from "../Images/mainlogo.png";
-
+import {Link } from "react-router-dom";
 export default function Navbar(props) {
 
   return (
@@ -9,7 +9,7 @@ export default function Navbar(props) {
       <div className="container d-flex justify-content-between align-items-center">
 
         <div>
-        <a href="#"><img src={mainlogo} alt="Thunder S"></img></a>  
+        <Link to="/home"><img src={mainlogo} className="nav-logo" alt="Thunder S"/></Link>
         </div>
 
         <div className=" d-flex  middleobject ">
@@ -82,9 +82,9 @@ export default function Navbar(props) {
 
 
         <div className="d-flex  linksnav">
-        <a href="#" className="p-2"><i className="fas fa-shopping-bag"><span className="counterproduct">0</span></i><br></br><span>Cart</span></a>
-        <a href="#" className="p-2"><i className="fa-solid fa-heart"><span className="counterproduct">0</span></i><br></br><span>Wishlist</span></a>
-        <a href="#" className="p-2"><i className="fas fa-user"></i><br></br><span>Profile</span></a>
+        <Link to="/under-development" className="p-2"><i className="fas fa-shopping-bag"><span className="counterproduct">0</span></i><br></br><span>Cart</span></Link>
+        <Link to="/under-development" className="p-2"><i className="fa-solid fa-heart"><span className="counterproduct">0</span></i><br></br><span>Wishlist</span></Link>
+        <Link to="/login" className="p-2"><i className="fas fa-user"></i><br></br><span>Profile</span></Link>
 
         
         </div>

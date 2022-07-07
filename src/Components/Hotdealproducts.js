@@ -35,7 +35,10 @@ export default function Hotdealproducts(props) {
           {loading && (
             <div>
               {" "}
-              <h1>Loading...</h1>
+              <img src="https://i.gifer.com/YCZH.gif" alt="Loading"   onError={({ currentTarget }) => {
+                currentTarget.onerror = null; 
+                currentTarget.src="https://i.stack.imgur.com/kOnzy.gif";
+              }}/>
             </div>
           )}
   

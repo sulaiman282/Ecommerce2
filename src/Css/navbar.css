@@ -1,14 +1,15 @@
 .navbarbody{
-    background-color: #06498b;
+    background-color: #06498b ;
     height:70px;
     width: 100%;
    
   
 }
-.navbarbody img{
+.nav-logo{
     width: 160px;
     height: 55px;
     padding:5px 0px 5px 0px;
+
 }
 .middleobject{
    

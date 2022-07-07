@@ -1,5 +1,6 @@
 import React from "react";
 import "../Css/navbar2.css";
+import {Link } from "react-router-dom";
 
 export default function Navbar2() {
   return (
@@ -62,7 +63,7 @@ export default function Navbar2() {
 
         <div>
           <a href="/">
-            <i className="fa-solid fa-arrow-trend-up pe-2 text-warning"></i>
+            <i className="fa-solid fa-arrow-trend-up pe-1 ps-1 text-warning"></i>
             Trending
           </a>
         </div>
@@ -128,11 +129,15 @@ export default function Navbar2() {
               </a>
             </li>
             <li>
-              {" "}
               <a href="/">
                 <i className="fa-solid fa-address-book pe-2"></i>Contact Us
               </a>
             </li>
+            <li>
+            <a href="/">
+              <i className="fas fa-user pe-2"></i>Login/Signup
+            </a>
+          </li>
           </ul>
         </div>
       </div>
