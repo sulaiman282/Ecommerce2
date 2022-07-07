@@ -1,0 +1,17 @@
+.policymainbody{
+    border:1px solid red
+}
+
+.policymainbody h6{
+    text-align: center;
+  
+}
+.policymainbody p{
+    font-size: 14px;
+    text-align: center;
+  
+}
+.policymainbody img{
+    height: 20%;
+    width: 20%;
+}

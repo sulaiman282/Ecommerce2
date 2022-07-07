@@ -1,0 +1,17 @@
+.adbodyhome{
+    margin-top: 3%;
+}
+
+.adbodyhome img{
+ width: 100%;
+ margin: ;
+}
+.adbodyhome img:hover{
+    width: 100%;
+    transform: scale(1.05);
+   }
+
+   .adbodyhome a:focus{
+    width: 100%;
+    transform: scale(1.05);
+   }

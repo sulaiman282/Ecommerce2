@@ -6,12 +6,17 @@ import "bootstrap/dist/js/bootstrap";
 import Topheader from "./Components/Topheader";
 import Navbar from "./Components/Navbar";
 import Navbar2 from "./Components/Navbar2";
-import Texttest from "./Components/Courasel";
+import Courasel from "./Components/Courasel";
 import Categoryhome from "./Components/Categoryhome";
 import Titlewithtimer from "./Components/Assets/Titlewithtimer";
 import Allproducts from "./Components/Allproducts";
-
-
+import Newsletter from "./Components/Newsletter";
+import Brandslider from "./Components/Brandslider";
+import Policymoneyback from "./Components/Policymoneyback";
+import Titleforcollection from "./Components/Assets/Titleforcollection";
+import Hotdealproducts from "./Components/Hotdealproducts";
+import Advertisehome from "./Components/Advertisehome";
+import Recentposts from "./Components/Recentposts";
 
 function App() {
   const [mode, setMode] = useState("dark");
@@ -21,19 +26,32 @@ function App() {
       document.body.style.backgroundColor = "white";
     } else {
       setMode("light");
-      document.body.style.backgroundColor = "black";
+      document.body.style.backgroundColor = "#020314";
     }
   };
+
+
+
 
   return (
     <div className="App">
       <Topheader mode={mode} toggleMode={toggleMode} />
       <Navbar mode={mode} />
       <Navbar2></Navbar2>
-      <Texttest />
-      <Categoryhome mode={mode}/>
+      
+      <Courasel />
+      <Recentposts/>
+      <Advertisehome/>
       <Titlewithtimer mode={mode} firstletter="H" title="OT DEALS" ctimer="1659983662000" />
-      <Allproducts mode={mode}/>
+      <Hotdealproducts mode={mode} Hotcount="12"/>
+      <Policymoneyback/>
+      <Categoryhome mode={mode}/>
+      <Titleforcollection mode={mode} firstletter="F" title="EATURED PRODUCTS"/>
+      <Allproducts mode={mode} productcount="20"/>
+      <Titleforcollection mode={mode} firstletter="O" title="UR BRANDS"/>
+      <Brandslider/>
+      
+      <Newsletter/>
     
     </div>
   );

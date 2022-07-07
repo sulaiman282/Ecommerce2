@@ -143,7 +143,7 @@ export default function Categoryhome(props) {
         <div className="col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 mt-5 ">
           <div className="col-12 blacktext d-flex justify-content-between">
            
-            <h5 className="fw-bold" >Women's Fasion</h5>
+            <h5 className="fw-bold "style={{color:props.mode==='dark'?'black':'white'}} >Women's Fasion</h5>
             <a href="url">
               <span style={{color:props.mode==='dark'?'blue':'white'}}>more &gt;&gt;</span>
             </a>

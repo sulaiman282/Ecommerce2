@@ -46,9 +46,6 @@
   }
 
 
-  .card:hover{
-  border: 1px solid #848CD8;
-  }
   
   .card:hover .testtext2{
   display: inline !important;
@@ -78,6 +75,14 @@
    
       width: 100%;
   }
+
+.productlink:hover{
+  color:red !important;
+}.productlink:focus{
+  color:red !important;
+}
+
+
   .price{
     text-align: center;
     width: 100%;
