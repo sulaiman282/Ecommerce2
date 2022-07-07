@@ -11,12 +11,61 @@
     color: rgb(255, 253, 253);
     font-size: 25px;
     font-weight: bold;
+    transform: translateX(-200%);
+    animation: slide-in-anim 1s ease-out forwards;
    
 }
-.carousel-item p{
-    font-size: 14px;
+
+@keyframes slide-in-anim {
+	20% {
+		opacity: 0;
+	}
+	60% {
+		transform: translateX(-75%);
+	}
+	75% {
+		transform: translateX(-50%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel-item p{
+    font-size: 14px;
+    transform: translateX(-200%);
+    animation: slide-in-anim2 1s ease-out forwards;
+}
+
+
+@keyframes slide-in-anim2 {
+	20% {
+		opacity: 0;
+	}
+	60% {
+		transform: translateX(75%);
+	}
+	75% {
+		transform: translateX(50%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
 .carousel-caption{
  background-color: rgba(3, 3, 3, 0.377);
 }
@@ -41,13 +90,13 @@
   
 
   .btn-7 {
-    color: #21ebff;
+    color: #ffffff;
     line-height: 40px;
     padding: 0;
     border: none;
     font-weight: bold;
     letter-spacing: 2px;
-    font-size: 14px ;
+    font-size: 16px ;
 
   }
   .btn-7 span {
@@ -62,8 +111,8 @@
     content: "";
     right: 0;
     bottom: 0;
-    background: #21ebff;
-    box-shadow: 0 0 5px #21ebff;
+    background: #fc0202;
+    box-shadow: 0 0 5px #faea11;
     transition: all 0.3s ease;
   }
   .btn-7:before{
@@ -86,8 +135,8 @@
     content: "";
     left: 0;
     top: 0;
-    background: #21ebff;
-    box-shadow: 0 0 5px #21ebff;
+    background: #f80000;
+    box-shadow: 0 0 5px #fff021;
     transition: all 0.3s ease;
   }
   .btn-7 span:before {

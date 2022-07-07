@@ -1,0 +1,29 @@
+.recentpost img{
+width: 100%;
+border-radius: 10px !important;
+margin: 5%;
+}
+.recentpost a{
+    
+    text-align: center;
+    font-size: 14px;
+}
+.recentpost2 {
+    text-align:justify;  
+    text-justify:inter-word;
+    font-size: 14px;
+}
+@media only screen and (max-width: 600px) {
+    .recentpost2 {
+       display: none;
+    }
+    .recentpost h5{
+        font-size: 14px;
+      }
+  }
+  
+.datetext{
+
+    font-size: 10px ;
+    text-align: right !important;
+}
