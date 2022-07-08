@@ -1,10 +1,18 @@
 .Categoryhome img{
  border-radius: 10px;
-
  height: 85%;
  transition: transform .3s;
 
+
 }
+
+.Categoryhome img:hover{
+    border: 1px solid rgba(0, 0, 0, 0.5) ;
+    transform: scale(1.05);
+   }
+
+
+
 .Categoryhome img:hover{
     border: 1px solid rgba(0, 0, 0, 0.5) ;
     transform: scale(1.05);

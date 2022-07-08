@@ -23,10 +23,12 @@ import Login from "./Components/pages/Login";
 import Seemore from "./Components/Assets/Seemore"
 import Services from "./Components/pages/Services";
 import Contactus from "./Components/pages/Contactus";
+import Blog from "./Components/pages/Blog";
 
 
 
-var pid;
+
+
 function App() {
   const [mode, setMode] = useState("dark");
   const toggleMode = () => {
@@ -75,7 +77,7 @@ function App() {
 
 
 
-        <Route exact path="/all_product" element={<div><Titleforcollection mode={mode} firstletter="A" title="LL PRODUCTS"/> <Allproducts mode={mode} productcount="200"/></div>} />
+        <Route exact path="/all_product" element={<div><Titleforcollection mode={mode} firstletter="A" title="LL PRODUCTS"/> <Allproducts mode={mode} productcount="50"/></div>} />
 
 
 
@@ -98,11 +100,21 @@ function App() {
 
           <Route exact path="/products/shoes" element={<div><Titleforcollection mode={mode} firstletter="A" title="LL SHOES"/> <Allproducts mode={mode} productcount="23"/></div>} />
 
-          <Route exact path="/services" element={<div><Services/></div>} />
+          <Route exact path="/services" element={<div><Services mode={mode}/></div>} />
 
 
         
           <Route path="/contact_us" element={<div><Contactus/></div>} />
+
+          <Route path="/blog" element={<div><Blog mode={mode}/></div>} />
+
+
+
+
+
+
+
+
 
 
 

@@ -1,5 +1,7 @@
 import React from "react";
+import {Link } from "react-router-dom";
 import "../Css/categoryhome.css";
+
 import doorhandle from "../Images/categoryhome/homeappliances/doorhandle.jpg";
 import metalbar from "../Images/categoryhome/homeappliances/metalbar.jpg";
 import mixergrinder from "../Images/categoryhome/homeappliances/mixergrinder.jpg";
@@ -24,156 +26,157 @@ export default function Categoryhome(props) {
   return (
     <div className="container Categoryhome">
       <div className="row">
-        <div className="col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 mt-5 ">
+
+        <div className="col-lg-6 col-xl-6 col-xxl-3 col-md-6 col-sm-12 mt-5 ">
           <div className="col-12 blacktext d-flex justify-content-between">
             {" "}
             <h5 className="fw-bold" style={{color:props.mode==='dark'?'black':'white'}}>Home Appliances</h5>
-            <a href="url">
+            <Link to="/products/furniture">
               <span style={{color:props.mode==='dark'?'blue':'white'}}>more &gt;&gt;</span>
-            </a>
+            </Link>
           </div>
 
           <div className="row mt-3">
             <div className="col-6 textgray d-flex justify-content-center">
-              <a href="url">
+              <Link to="/products/furniture">
                 <img src={doorhandle} alt="Italian Trulli"></img><br/>
-                <a href="url" style={{color:props.mode==='dark'?'black':'white'}}>Door Handle</a>
-              </a>
+                <Link to="/products/furniture" style={{color:props.mode==='dark'?'black':'white'}}>Door Handle</Link>
+              </Link>
             </div>
             <div className="col-6 textgray d-flex justify-content-center">
-              <a href="url">
+              <Link to="/products/furniture">
                 <img src={metalbar} alt="Italian Trulli"></img><br/>
-                <a href="url" style={{color:props.mode==='dark'?'black':'white'}}>Metal Bar</a>
-              </a>
+                <Link to="/products/furniture" style={{color:props.mode==='dark'?'black':'white'}}>Metal Bar</Link>
+              </Link>
             </div>
 
             <div className="row"></div>
             <div className="col-6 textgray d-flex justify-content-center">
-              <a href="url">
+              <Link to="/products/furniture">
                 <img src={mixergrinder} alt="Italian Trulli"></img><br/>
-                <a href="url" style={{color:props.mode==='dark'?'black':'white'}}>Mixer Grinder</a>
-              </a>
+                <Link to="/products/furniture" style={{color:props.mode==='dark'?'black':'white'}}>Mixer Grinder</Link>
+              </Link>
             </div>
             <div className="col-6 textgray d-flex justify-content-center">
-              <a href="url">
+              <Link to="/products/furniture">
                 <img src={waterfilter} alt="Italian Trulli"></img><br/>
-                <a href="url" style={{color:props.mode==='dark'?'black':'white'}}>Water Filter</a>
-              </a>
+                <Link to="/products/furniture" style={{color:props.mode==='dark'?'black':'white'}}>Water Filter</Link>
+              </Link>
             </div>
           </div>
         </div>
 
-        <div className="col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 mt-5 ">
+        <div className="col-lg-6 col-xl-6 col-xxl-3 col-md-6 col-sm-12 mt-5 ">
           <div className="col-12 blacktext d-flex justify-content-between">
           
             <h5 className="fw-bold" style={{color:props.mode==='dark'?'black':'white'}}>Cosmatic</h5>
-            <a href="url">
+            <Link to="/products/cloths">
               <span style={{color:props.mode==='dark'?'blue':'white'}}>more &gt;&gt;</span>
-            </a>
+            </Link>
           </div>
           <div className="row mt-3">
           <div className="col-6 textgray d-flex justify-content-center">
-            <a href="url">
+            <Link to="/products/cloths">
               <img src={lipstick} alt="Italian Trulli"></img><br/>
-              <a href="url" style={{color:props.mode==='dark'?'black':'white'}}>Googles</a>
-            </a>
+              <Link to="/products/cloths" style={{color:props.mode==='dark'?'black':'white'}}>Googles</Link>
+            </Link>
           </div>
           <div className="col-6 textgray d-flex justify-content-center ">
-            <a href="url">
+            <Link to="/products/cloths">
               <img src={Moussefoundation} alt="Italian Trulli"></img><br/>
-              <a href="url" style={{color:props.mode==='dark'?'black':'white'}}>Mousse Foundation</a>
-            </a>
+              <Link to="/products/cloths" style={{color:props.mode==='dark'?'black':'white'}}>Mousse Foundation</Link>
+            </Link>
           </div>
 
           <div className="row"></div>
           <div className="col-6 textgray d-flex justify-content-center ">
-            <a href="url">
+            <Link to="/products/cloths">
               <img src={nailart} alt="Italian Trulli"></img><br/>
-              <a href="url" style={{color:props.mode==='dark'?'black':'white'}}>Nail Art</a>
-            </a>
+              <Link to="/products/cloths" style={{color:props.mode==='dark'?'black':'white'}}>Nail Art</Link>
+            </Link>
           </div>
           <div className="col-6 textgray d-flex justify-content-center ">
-            <a href="url">
+            <Link to="/products/cloths">
               <img src={nailpolish} alt="Italian Trulli"></img><br/>
-              <a href="url" style={{color:props.mode==='dark'?'black':'white'}}>Nail Polish</a>
-            </a>
+              <Link to="/products/cloths" style={{color:props.mode==='dark'?'black':'white'}}>Nail Polish</Link>
+            </Link>
           </div>
         </div>
         </div>
 
-        <div className="col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 mt-5 ">
+        <div className="col-lg-6 col-xl-6 col-xxl-3 col-md-6 col-sm-12 mt-5 ">
           <div className="col-12 blacktext d-flex justify-content-between">
             
             <h5 className="fw-bold" style={{color:props.mode==='dark'?'black':'white'}}>Mobile Accessories</h5>
-            <a href="url">
+            <Link to="/products/electronics">
               <span style={{color:props.mode==='dark'?'blue':'white'}}>more &gt;&gt;</span>
-            </a>
+            </Link>
             
           </div>
           <div className="row mt-3">
           <div className="col-6 textgray d-flex justify-content-center">
-            <a href="url">
+            <Link to="/products/electronics">
               <img src={headphones} alt="Italian Trulli"></img><br/>
-              <a href="url" style={{color:props.mode==='dark'?'black':'white'}}>Headphones</a>
-            </a>
+              <Link to="/products/electronics" style={{color:props.mode==='dark'?'black':'white'}}>Headphones</Link>
+            </Link>
           </div>
           <div className="col-6 textgray d-flex justify-content-center">
-            <a href="url">
+            <Link to="/products/electronics">
               <img src={powerbank} alt="Italian Trulli"></img><br/>
-              <a href="url" style={{color:props.mode==='dark'?'black':'white'}}>Power Bank</a>
-            </a>
+              <Link to="/products/electronics" style={{color:props.mode==='dark'?'black':'white'}}>Power Bank</Link>
+            </Link>
           </div>
 
           <div className="row"></div>
           <div className="col-6 textgray d-flex justify-content-center">
-            <a href="url">
+            <Link to="/products/electronics">
               <img src={smarphones} alt="Italian Trulli"></img><br/>
-              <a href="url" style={{color:props.mode==='dark'?'black':'white'}}>Smartphones</a>
-            </a>
+              <Link to="/products/electronics" style={{color:props.mode==='dark'?'black':'white'}}>Smartphones</Link>
+            </Link>
           </div>
           <div className="col-6 textgray d-flex justify-content-center">
-            <a href="url">
+            <Link to="/products/electronics">
               <img src={smartwatch} alt="Italian Trulli"></img><br/>
-              <a href="url" style={{color:props.mode==='dark'?'black':'white'}}>Smart Watch</a>
-            </a>
+              <Link to="/products/electronics" style={{color:props.mode==='dark'?'black':'white'}}>Smart Watch</Link>
+            </Link>
           </div>
         </div>
         </div>
 
-        <div className="col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 mt-5 ">
+        <div className="col-lg-6 col-xl-6 col-xxl-3 col-md-6 col-sm-12 mt-5 ">
           <div className="col-12 blacktext d-flex justify-content-between">
            
             <h5 className="fw-bold "style={{color:props.mode==='dark'?'black':'white'}} >Women's Fasion</h5>
-            <a href="url">
+            <Link to="/products/cloths">
               <span style={{color:props.mode==='dark'?'blue':'white'}}>more &gt;&gt;</span>
-            </a>
+            </Link>
           </div>
           <div className="row mt-3">
           <div className="col-6 textgray d-flex justify-content-center">
-            <a href="url">
+            <Link to="/products/cloths">
               <img src={girlshat} alt="Italian Trulli"></img><br/>
-              <a href="url" style={{color:props.mode==='dark'?'black':'white'}}>Girls Hat</a>
-            </a>
+              <Link to="/products/cloths" style={{color:props.mode==='dark'?'black':'white'}}>Girls Hat</Link>
+            </Link>
           </div>
           <div className="col-6 textgray d-flex justify-content-center">
-            <a href="url">
+            <Link to="/products/cloths">
               <img src={googles} alt="Italian Trulli"></img><br/>
-              <a href="url" style={{color:props.mode==='dark'?'black':'white'}}>Googles</a>
-            </a>
+              <Link to="/products/cloths" style={{color:props.mode==='dark'?'black':'white'}}>Googles</Link>
+            </Link>
           </div>
 
           <div className="row"></div>
           <div className="col-6 textgray d-flex justify-content-center">
-            <a href="url">
+            <Link to="/products/cloths">
               <img src={shoes} alt="Italian Trulli"></img><br/>
-              <a href="url" style={{color:props.mode==='dark'?'black':'white'}}>Shoes</a>
-            </a>
+              <Link to="/products/cloths" style={{color:props.mode==='dark'?'black':'white'}}>Shoes</Link>
+            </Link>
           </div>
           <div className="col-6 textgray d-flex justify-content-center ">
-            <a href="url">
+            <Link to="/products/cloths">
               <img src={watches} alt="Italian Trulli"></img><br/>
-              <a href="url" style={{color:props.mode==='dark'?'black':'white'}}>Watches</a>
-            </a>
+              <Link to="/products/cloths" style={{color:props.mode==='dark'?'black':'white'}}>Watches</Link>
+            </Link>
           </div>
         </div>
         </div>

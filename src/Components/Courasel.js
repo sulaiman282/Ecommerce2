@@ -3,7 +3,7 @@ import "../Css/courasel.css";
 import slider1 from "../Images/slider1.jpg"
 import slider2 from "../Images/slider2.jpg"
 import slider3 from "../Images/slider3.jpg"
-
+import {Link } from "react-router-dom";
 
 
 export default function Courasel() {
@@ -22,7 +22,8 @@ export default function Courasel() {
         <div className="carousel-caption d-none d-md-block">
           <h5>ঈদ স্পেশাল অফার</h5>
           <p>এই ঈদে যা কিনবেন ডাবল দাম , না কিনলে নাই</p>
-          <button className="custom-btn btn-7"><span>Checkout</span></button>
+          <Link to="/hot_deals">  <button className="custom-btn btn-7"><span>Checkout</span></button></Link>
+        
         </div>
       </div>
       <div className="carousel-item">
@@ -30,7 +31,7 @@ export default function Courasel() {
         <div className="carousel-caption d-none d-md-block">
           <h5>ঈদ স্পেশাল অফার</h5>
           <p>এই ঈদে যা কিনবেন ডাবল দাম , না কিনলে নাই</p>
-          <button className="custom-btn btn-7"><span>Checkout</span></button>
+          <Link to="/hot_deals">  <button className="custom-btn btn-7"><span>Checkout</span></button></Link>
         </div>
       </div>
       <div className="carousel-item">
@@ -38,7 +39,7 @@ export default function Courasel() {
         <div className="carousel-caption d-none d-md-block">
           <h5>ঈদ স্পেশাল অফার</h5>
           <p>এই ঈদে যা কিনবেন ডাবল দাম , না কিনলে নাই</p>
-          <button className="custom-btn btn-7"><span>Checkout</span></button>
+          <Link to="/hot_deals">  <button className="custom-btn btn-7"><span>Checkout</span></button></Link>
         </div>
       </div>
     </div>

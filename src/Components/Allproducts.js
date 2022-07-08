@@ -75,24 +75,21 @@ export default function Allproducts(props) {
                 <img src={(product.images==="coffee.png")||product.image? "https://www.motorcyclevalley.com/photo/thumb/New-Suzuki-Gixxer-Carburetor.jpg":product.images} alt="#dd"
                 onError={({ currentTarget }) => {
                   currentTarget.onError = null; 
-                  currentTarget.src="https://i.pinimg.com/originals/6d/a8/78/6da878cf7299317b2bd88c7471111626.gif";
+                  currentTarget.src="https://c.tenor.com/haruxnBh-T4AAAAC/mouse-mini.gif";
                 }}
                />
               </div>
+              
               <div className="card-description">
-                <Link className="productlink d-flex  justify-content-center" style={{color:props.mode==='dark'?'black':'white'}}  onClick={() => {
-                  
-                 
-                 
-                 
-                }} 
-                
-                
-                to="url">
-                  {product.title}
-                </Link>
+            
+                <a 
+
+                className="productlink d-flex  justify-content-center" style={{color:props.mode==='dark'?'black':'white'}} target="_blank"   href="https://www.w3schools.com">{product.title}
+
+                </a>
                 <h6 className="price mt-2 fw-bold">৳ {`${product.price + 2000}`}</h6>
                 <div className="d-flex justify-content-between w-100">
+                
                 <button type="button" className="addcartbtn" style={{color:props.mode==='dark'?'gray':'white'}} ><span><i className="fa-solid fa-bag-shopping pe-2"></i>Cart </span></button>
                 <button type="button" className="addlistbtn " style={{color:props.mode==='dark'?'gray':'white'}}><span><i className="fa-solid fa-heart pe-2"></i>Wishlist</span></button>
                 

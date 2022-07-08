@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import {Link } from "react-router-dom";
 import "../Css/hotdealproducts.css"
 
 
@@ -55,13 +56,17 @@ export default function Hotdealproducts(props) {
             <div key={product.id} className="card d-flex  justify-content-center">
               <div className="cart-image d-flex  justify-content-center">
                 <img src={(product.images==="coffee.png")||product.image? "https://www.motorcyclevalley.com/photo/thumb/New-Suzuki-Gixxer-Carburetor.jpg":product.images} alt="#"
+                onError={({ currentTarget }) => {
+                  currentTarget.onError = null; 
+                  currentTarget.src="https://c.tenor.com/haruxnBh-T4AAAAC/mouse-mini.gif";
+                }}
                 />
                 <span className="offerp">-10%</span>
               </div>
               <div className="card-description">
-                <a className="productlink d-flex  justify-content-center" style={{color:props.mode==='dark'?'black':'white'}} href="url">
+                <Link className="productlink d-flex  justify-content-center" style={{color:props.mode==='dark'?'black':'white'}} to={(product.id).toString()}>
                   {product.title}
-                </a>
+                </Link>
                 <h6 className="price mt-2 fw-bold">৳{`${product.price + 2000}`}<span className="lowprice" >{`${parseInt((product.price + 2000) -(product.price + 2000)*0.1)}`}</span></h6>
                 <div className="d-flex justify-content-between w-100">
                 <button type="button" className="addcartbtn" style={{color:props.mode==='dark'?'gray':'white'}} ><span><i className="fa-solid fa-bag-shopping pe-2"></i>Cart </span></button>

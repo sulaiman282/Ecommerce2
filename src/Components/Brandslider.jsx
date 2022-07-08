@@ -20,7 +20,7 @@ import bimage8 from "../Images/brandlogos/xiaomi.png"
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 4,
+    items: 5,
     slidesToSlide: 4 // optional, default to 1.
   },
   tablet: {
@@ -29,7 +29,7 @@ const responsive = {
     slidesToSlide: 3 // optional, default to 1.
   },
   mobile: {
-    breakpoint: { max: 767, min: 464 },
+    breakpoint: { max: 767, min: 200 },
     items: 2,
     slidesToSlide: 1 // optional, default to 1.
   }

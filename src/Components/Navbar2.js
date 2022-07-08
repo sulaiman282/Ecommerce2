@@ -86,7 +86,7 @@ export default function Navbar2() {
         </div>
 
         <div className="smallhide">
-          <Link to="/">
+          <Link to="/blog">
             <i className="fa-solid fa-blog pe-2"></i>Blog
           </Link>
         </div>
@@ -130,7 +130,7 @@ export default function Navbar2() {
             </li>
 
             <li>
-              <Link to="/">
+              <Link to="/blog">
                 <i className="fa-solid fa-blog pe-2"></i>Blog
               </Link>
             </li>
