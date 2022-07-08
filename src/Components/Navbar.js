@@ -13,6 +13,10 @@ export default function Navbar(props) {
         </div>
 
         <div className=" d-flex  middleobject ">
+
+        <Link to="/home" className="me-2 mt-1 home-btnmob"><i className="fa fa-home"></i></Link>
+
+
           <select className="select-category">
             <option value="All">All </option>
             <option value="Accessories">Accessories</option>
@@ -72,7 +76,7 @@ export default function Navbar(props) {
           <input
             type="text"
             id="search-product"
-            placeholder="Search in the store"
+            placeholder="enter keywords"
             name="fname"
           />
           <button type="submit" id="buttonid" title="Search Now">

@@ -21,37 +21,37 @@ export default function Navbar2() {
             aria-labelledby="dropdownMenuButton1"
           >
             <li>
-              <Link className="dropdown-item" to="/">
+              <Link className="dropdown-item" to="/products/cloths">
                 Cloths
               </Link>
             </li>
             <li>
-              <Link className="dropdown-item" to="/">
+              <Link className="dropdown-item" to="/products/electronics">
                 Electronics
               </Link>
             </li>
             <li>
-              <Link className="dropdown-item" to="/">
+              <Link className="dropdown-item" to="/products/furniture">
                 Furniture
               </Link>
             </li>
             <li>
-              <Link className="dropdown-item" to="/">
+              <Link className="dropdown-item" to="/products/shoes">
                 Shoes
               </Link>
             </li>
             <li>
-              <Link className="dropdown-item" to="/">
+              <Link className="dropdown-item" to="/all_product">
                 Others
               </Link>
             </li>
             <li>
-              <Link className="dropdown-item" to="/">
+              <Link className="dropdown-item" to="/all_product">
               API Blank
               </Link>
             </li>
             <li>
-              <Link className="dropdown-item" to="/">
+              <Link className="dropdown-item" to="/all_product">
               API Blank
               </Link>
             </li>
@@ -92,13 +92,13 @@ export default function Navbar2() {
         </div>
 
         <div className="smallhide">
-          <Link to="/">
+          <Link to="/services">
             <i className="fa-solid fa-gear pe-2"></i>Services
           </Link>
         </div>
 
         <div className="smallhide">
-          <Link to="/">
+          <Link to="/contact_us">
             <i className="fa-solid fa-address-book pe-2"></i>Contact Us
           </Link>
         </div>
@@ -119,12 +119,12 @@ export default function Navbar2() {
             aria-labelledby="dropdownMenuButton1"
           >
             <li>
-              <Link to="/">
+              <Link to="/all_product">
                 <i className="fa-solid fa-store pe-2"></i>All Products
               </Link>
             </li>
             <li>
-              <Link to="/">
+              <Link to="/new-arrivals">
                 <i className="fa-solid fa-rocket pe-2"></i>New Arrivals
               </Link>
             </li>
@@ -135,19 +135,19 @@ export default function Navbar2() {
               </Link>
             </li>
             <li>
-              <Link to="/">
+              <Link to="/services">
                 <i className="fa-solid fa-gear pe-2"></i>Services
               </Link>
             </li>
             <li>
-              <Link to="/">
+              <Link to="/contact_us">
                 <i className="fa-solid fa-address-book pe-2"></i>Contact Us
               </Link>
             </li>
             <li>
-            <a to="/">
+            <Link to="/login">
               <i className="fas fa-user pe-2"></i>Login/Signup
-            </a>
+            </Link>
           </li>
           </ul>
         </div>

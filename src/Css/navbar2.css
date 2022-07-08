@@ -10,7 +10,10 @@
 .navbar2body a{
  color: white;
  font-size: 14px;
+
 }
+
+
 .navbar2body a:hover{
     color: red;
     
@@ -22,6 +25,15 @@
     background-color: Transparent;
     font-size: 14px;
 }
+@media screen and (max-width: 550px) {
+  .navbar2body a{
+    font-size: 12px;
+  }
+  .categorybtn{
+    font-size: 12px;
+  }
+}
+
 .dropdown-item{
     color: #ffffff !important;
     background-color: transparent !important;

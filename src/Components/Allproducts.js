@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import {Link } from "react-router-dom";
 import "../Css/allproducts.css";
 
 export default function Allproducts(props) {
@@ -18,6 +19,18 @@ export default function Allproducts(props) {
   }
   else if(pathname==="trending"){
     document.title="TSHOP - TRENDING";
+  }
+  else if(pathname==="products/cloths"){
+    document.title="TSHOP - CLOTHS";
+  }
+  else if(pathname==="products/electronics"){
+    document.title="TSHOP - ELECTRONICS";
+  }
+  else if(pathname==="products/furniture"){
+    document.title="TSHOP - FURNITURE";
+  }
+  else if(pathname==="products/shoes"){
+    document.title="TSHOP - SHOES";
   }
 
 
@@ -48,7 +61,7 @@ export default function Allproducts(props) {
         <div className="products-container">
           {loading && (
             <div>
-              {" "}
+           
               <img src="https://i.gifer.com/YCZH.gif" alt="Loading"   onError={({ currentTarget }) => {
                 currentTarget.onerror = null; 
                 currentTarget.src="https://i.stack.imgur.com/kOnzy.gif";
@@ -67,9 +80,17 @@ export default function Allproducts(props) {
                />
               </div>
               <div className="card-description">
-                <a className="productlink d-flex  justify-content-center" style={{color:props.mode==='dark'?'black':'white'}} href="url">
+                <Link className="productlink d-flex  justify-content-center" style={{color:props.mode==='dark'?'black':'white'}}  onClick={() => {
+                  
+                 
+                 
+                 
+                }} 
+                
+                
+                to="url">
                   {product.title}
-                </a>
+                </Link>
                 <h6 className="price mt-2 fw-bold">৳ {`${product.price + 2000}`}</h6>
                 <div className="d-flex justify-content-between w-100">
                 <button type="button" className="addcartbtn" style={{color:props.mode==='dark'?'gray':'white'}} ><span><i className="fa-solid fa-bag-shopping pe-2"></i>Cart </span></button>
