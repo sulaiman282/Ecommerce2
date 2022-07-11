@@ -84,7 +84,7 @@ export default function Allproducts(props) {
             
                 <a 
 
-                className="productlink d-flex  justify-content-center" style={{color:props.mode==='dark'?'black':'white'}} target="_blank"   href="https://www.w3schools.com">{product.title}
+                className="productlink d-flex  justify-content-center" style={{color:props.mode==='dark'?'black':'white'}} target="_blank"   href="http://www.dr-seif.com/content/under-contraction-1.gif">{product.title}
 
                 </a>
                 <h6 className="price mt-2 fw-bold">৳ {`${product.price + 2000}`}</h6>

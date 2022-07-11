@@ -1,44 +1,98 @@
-import React from 'react'
-import "./css/login.css"
-
-
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import { useForm } from "react-hook-form";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import "./css/login.css";
+import {Link } from "react-router-dom";
 export default function Login() {
-  var pathname = window.location.pathname;
-  pathname = pathname.substring(1);
-  if(pathname==="login"){
-    document.title="TSHOP - LOGIN";
-  }
+ 
+      document.title = "TSHOP - LOGIN";
+  
+  
+
+  const {
+    register,
+    formState: { errors },
+    handleSubmit,
+  } = useForm();
+
+
+
+
+
+
+  const onSubmit = (data) => {
+   
+    password = data.password;
+    email = data.email;
+    // signUp();
+    console.log(data)
+   
+
+  };
+
+
+
+
+  let  email, password;
+  
+
+
+
 
   return (
-    <div className='container'>
-    <div className='loginbody'>
-    <div class="mainlogin">  	
-		<input type="checkbox" id="chk" aria-hidden="true"/>
+    <div className="container">
+      <div className="loginbody">
+        <div className="mainlogin">
+          <ToastContainer />
+      
 
-			<div class="signup">
-				<form>
-					<label for="chk" className='labellogin' aria-hidden="true">Sign up</label>
-					<input type="text" name="txt" placeholder="User name" required=""/>
-					<input type="email" name="email" placeholder="Email" required=""/>
-					<input type="password" id="psw" name="psw" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required/>
-          <span className='signupwith d-flex justify-content-center text-light'>or with :<a href="url"><i class="fa-brands fa-facebook"></i></a><a href="url"><i class="fa-brands fa-google-plus-square"></i></a><a href="url"><i class="fa-brands fa-twitter"></i></a> </span>
-					<button>Sign up</button>
-				</form>
-			</div>
+          <div className="signup">
+            <form onSubmit={handleSubmit(onSubmit)}>
+              <label htmlFor="chk" className="labellogin" aria-hidden="true">
+                User Login
+              </label>
+          
 
-			<div class="login">
-				<form>
-					<label className='labellogin' for="chk" aria-hidden="true">Login</label>
-					<input type="email" name="email" placeholder="Email" required=""/>
-					<input type="password" name="pswd" placeholder="Password" required=""/>
-          <span className='loginwith d-flex justify-content-center text-dark'>or with :<a href="url"><i class="fa-brands fa-facebook"></i></a><a href="url"><i class="fa-brands fa-google-plus-square"></i></a><a href="url"><i class="fa-brands fa-twitter"></i></a> </span>
-					<button>Login</button>
-				</form>
-			</div>
-	</div>
+              <input
+                type="text"
+                name="email"
+                placeholder="Email"
+                {...register("email", {
+                  required: "Email is required",
+
+                  pattern: {
+                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+                    message: "Email is invalid",
+                  },
+                })}
+              />
+              {errors.email && <p className="error">{errors.email.message}</p>}
+              <input
+                type="password"
+                id="psw"
+                name="psw"
+                placeholder="Password"
+                {...register("password", {
+                  required: "Enter password",
+                  minLength: { value: 8, message: "Minimum length 8" },
+                  maxLength: { value: 20, message: "Maximum length 20" },
+                  
+                })}
+              />
+              {errors.password && <p className="error">{errors.password.message}</p>}
+              <button type="submit" className="buttonsp ">
+                Login
+              </button>
+            </form>
+             <span className="d-flex justify-content-center text-light mt-5">Don't have an account? <Link to="../signup" className="text-danger ms-2"> Sign up </Link></span>
+
+          </div>
+
+          
+        </div>
+      </div>
     </div>
-    
-    </div>
-  
-  )
+  );
 }

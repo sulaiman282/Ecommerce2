@@ -14,7 +14,11 @@
     -moz-border-radius:  0 0 50% 50%;
     -webkit-border-radius:  0 0 50% 50%;
     border-radius: 0 0 50% 50%;
+    transition: transform .2s;
 }
 
+.cart-image:hover .offerp{
+    transform: scale(1.3);
+}
 
 

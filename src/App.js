@@ -20,6 +20,7 @@ import Advertisehome from "./Components/Advertisehome";
 import Recentposts from "./Components/Recentposts";
 import Footer from "./Components/Footer";
 import Login from "./Components/pages/Login";
+import Signup from "./Components/pages/Signup";
 import Seemore from "./Components/Assets/Seemore"
 import Services from "./Components/pages/Services";
 import Contactus from "./Components/pages/Contactus";
@@ -74,7 +75,7 @@ function App() {
 
 
         <Route exact path="/login" element={<div><Login/></div>} />
-
+        <Route exact path="/Signup" element={<div><Signup/></div>} />
 
 
         <Route exact path="/all_product" element={<div><Titleforcollection mode={mode} firstletter="A" title="LL PRODUCTS"/> <Allproducts mode={mode} productcount="50"/></div>} />
