@@ -3,13 +3,16 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import "../Css/hotdealproducts.css";
 
+
 export default function Hotdealproducts(props) {
   var pathname = window.location.pathname;
   pathname = pathname.substring(1);
-
+  
   if (pathname === "hot_deals") {
     document.title = "TSHOP - HOT DEALS";
   }
+
+
 
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
@@ -37,7 +40,7 @@ export default function Hotdealproducts(props) {
       <div className="products-container">
         {loading && (
           <div>
-            {" "}
+       
             <img
               src="https://i.gifer.com/YCZH.gif"
               alt="Loading"
@@ -68,14 +71,15 @@ export default function Hotdealproducts(props) {
               <span className="offerp">-10%</span>
             </div>
             <div className="card-description">
-              <a
+              <Link
                 className="productlink d-flex  justify-content-center"
                 style={{ color: props.mode === "dark" ? "black" : "white" }}
-                target="_blank"
-                href="http://www.dr-seif.com/content/under-contraction-1.gif"
+               
+                to= {`/product/${product.id}`}  
               >
+
                 {product.title}
-              </a>
+              </Link>
               <h6 className="price mt-2 fw-bold">
                 ৳{`${product.price + 2000}`}
                 <span className="lowprice">{`${parseInt(
@@ -106,7 +110,7 @@ export default function Hotdealproducts(props) {
           </div>
         ))}
       </div>
-      <div className="m-4 d-flex align-item-center justify-content-center"></div>
+   
     </div>
   );
 }

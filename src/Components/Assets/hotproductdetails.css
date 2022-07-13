@@ -1,0 +1,40 @@
+.mainhotdetailsimage {
+  width: 90%;
+  height: auto;
+}
+.smallchotdetailsimage {
+  height: 40%;
+  width: 50%;
+  margin-right: 10px;
+}
+.smallchotdetailsimage:hover {
+  border: 1px solid red;
+}
+.smallchotdetailsimage:focus {
+  border: 1px solid red;
+}
+.textdescriptionbody {
+  text-align: justify;
+}
+.detailsaddtocart {
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 20px;
+}
+
+.detailsaddtocart:hover {
+  background-color: red;
+}
+
+.detailsaddtocart:focus {
+  background-color: red;
+}
+
+.payment-cards-fa i {
+  font-size: 300%;
+  
+}
+.payment-cards-fa {
+  width: 70%;
+}

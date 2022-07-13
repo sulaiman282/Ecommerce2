@@ -82,11 +82,11 @@ export default function Allproducts(props) {
               
               <div className="card-description">
             
-                <a 
+                <Link 
 
-                className="productlink d-flex  justify-content-center" style={{color:props.mode==='dark'?'black':'white'}} target="_blank"   href="http://www.dr-seif.com/content/under-contraction-1.gif">{product.title}
+                className="productlink d-flex  justify-content-center" style={{color:props.mode==='dark'?'black':'white'}} target="_blank"   to="http://www.dr-seif.com/content/under-contraction-1.gif">{product.title}
 
-                </a>
+                </Link>
                 <h6 className="price mt-2 fw-bold">৳ {`${product.price + 2000}`}</h6>
                 <div className="d-flex justify-content-between w-100">
                 

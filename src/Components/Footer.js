@@ -1,5 +1,6 @@
 import React from 'react'
 import "../Css/footer.css"
+import {Link } from "react-router-dom";
 export default function Footer() {
     return (
         <div className="fullfooter mt-5">
@@ -41,9 +42,9 @@ export default function Footer() {
                   <div className="col-xl-4 col-lg-4 mb-50">
                     <div className="footer-widget">
                       <div className="footer-logo">
-                        <a href="index.html" className="linktext">
+                        <Link to="index.html" className="linktext">
                           <h3>⚡SHOP </h3>
-                        </a>
+                        </Link>
                       </div>
                       <div className="footer-text">
                         <p>
@@ -54,15 +55,15 @@ export default function Footer() {
                       </div>
                       <div className="footer-social-icon">
                         <span>Follow us</span>
-                        <a href="#">
+                        <Link to="#">
                           <i className="fab fa-facebook-f facebook-bg mb-4"></i>
-                        </a>
-                        <a href="#">
+                        </Link>
+                        <Link to="#">
                           <i className="fab fa-twitter twitter-bg mb-4"></i>
-                        </a>
-                        <a href="#">
+                        </Link>
+                        <Link to="#">
                           <i className="fab fa-google-plus-g google-bg mb-4"></i>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -73,34 +74,34 @@ export default function Footer() {
                       </div>
                       <ul>
                         <li>
-                          <a href="#">Home</a>
+                          <Link to="#">Home</Link>
                         </li>
                         <li>
-                          <a href="#">about</a>
+                          <Link to="#">about</Link>
                         </li>
                         <li>
-                          <a href="#">services</a>
+                          <Link to="#">services</Link>
                         </li>
                         <li>
-                          <a href="#">portfolio</a>
+                          <Link to="#">portfolio</Link>
                         </li>
                         <li>
-                          <a href="#">Contact</a>
+                          <Link to="#">Contact</Link>
                         </li>
                         <li>
-                          <a href="#">About us</a>
+                          <Link to="#">About us</Link>
                         </li>
                         <li>
-                          <a href="#">Our Services</a>
+                          <Link to="#">Our Services</Link>
                         </li>
                         <li>
-                          <a href="#">Expert Team</a>
+                          <Link to="#">Expert Team</Link>
                         </li>
                         <li>
-                          <a href="#">Contact us</a>
+                          <Link to="#">Contact us</Link>
                         </li>
                         <li>
-                          <a href="#">Latest News</a>
+                          <Link to="#">Latest News</Link>
                         </li>
                       </ul>
                     </div>
@@ -141,19 +142,19 @@ export default function Footer() {
                     <div className="footer-menu">
                       <ul>
                         <li>
-                          <a href="#">Home</a>
+                          <Link to="#">Home</Link>
                         </li>
                         <li>
-                          <a href="#">Terms</a>
+                          <Link to="#">Terms</Link>
                         </li>
                         <li>
-                          <a href="#">Privacy</a>
+                          <Link to="#">Privacy</Link>
                         </li>
                         <li>
-                          <a href="#">Policy</a>
+                          <Link to="#">Policy</Link>
                         </li>
                         <li>
-                          <a href="#">Contact</a>
+                          <Link to="#">Contact</Link>
                         </li>
                       </ul>
                     </div>
