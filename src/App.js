@@ -26,7 +26,7 @@ import Services from "./Components/pages/Services";
 import Contactus from "./Components/pages/Contactus";
 import Blog from "./Components/pages/Blog";
 import Hotproductdetails from "./Components/Assets/Hotproductdetails";
-
+import Anyproductdetails from "./Components/Assets/Anyproductdetails";
 
 
 
@@ -58,7 +58,7 @@ function App() {
         <Route path="*" element={<div><Courasel />
         <Policymoneyback mode={mode}/>
         <Categoryhome mode={mode}/>
-        <Titlewithtimer mode={mode} firstletter="H" title="OT DEALS" ctimer="1659983662000" />
+        <Titlewithtimer mode={mode} firstletter="H" title="OT DEALS" ctimer="1669983662000" />
         <Hotdealproducts mode={mode} Hotcount="10"/>
         <Seemore mode={mode} turl={"./hot_deals"}/>
         <Advertisehome/>
@@ -82,12 +82,12 @@ function App() {
 
 
 
-        <Route exact path="/hot_deals" element={<div><Titlewithtimer mode={mode} firstletter="H" title="OT DEALS" ctimer="1659983662000" />
+        <Route exact path="/hot_deals" element={<div><Titlewithtimer mode={mode} firstletter="H" title="OT DEALS" ctimer="1669983662000" />
         <Hotdealproducts mode={mode} Hotcount="50"/></div>} />
 
 
         <Route exact path="/product/*" element={<div><Hotproductdetails mode={mode} /></div>} />
-
+        <Route exact path="/products/*" element={<div><Anyproductdetails mode={mode} /></div>} />
 
         <Route exact path="/trending" element={<div><Titleforcollection mode={mode} firstletter="T" title="RENDING PRODUCTS"/> <Allproducts mode={mode} productcount="50"/></div>} />
 

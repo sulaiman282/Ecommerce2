@@ -83,7 +83,7 @@ export default function Hotdealproducts(props) {
               <h6 className="price mt-2 fw-bold">
                 ৳{`${product.price + 2000}`}
                 <span className="lowprice">{`${parseInt(
-                  product.price + 2000 - (product.price + 2000) * 0.1
+                  product.price + 2000 + (product.price + 2000) * 0.1
                 )}`}</span>
               </h6>
               <div className="d-flex justify-content-between w-100">

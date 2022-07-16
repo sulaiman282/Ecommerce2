@@ -3,7 +3,7 @@
   height: auto;
 }
 .smallchotdetailsimage {
-  height: 40%;
+ 
   width: 50%;
   margin-right: 10px;
 }
@@ -37,4 +37,9 @@
 }
 .payment-cards-fa {
   width: 70%;
+}
+.low-priceh{
+  font-size: 20px;
+  color: red;
+  text-decoration: line-through;
 }
