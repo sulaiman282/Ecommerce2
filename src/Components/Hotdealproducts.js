@@ -35,6 +35,18 @@ export default function Hotdealproducts(props) {
       .finally(() => setLoading(false));
   }, []);
 
+
+
+
+
+
+
+
+
+
+
+
+
   return (
     <div className="container product-cart">
       <div className="products-container">

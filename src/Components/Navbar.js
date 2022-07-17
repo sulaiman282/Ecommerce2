@@ -1,8 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../Css/navbar.css";
 import mainlogo from "../Images/mainlogo.png";
 import {Link } from "react-router-dom";
+
+
 export default function Navbar(props) {
+
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    const items = JSON.parse(localStorage.getItem('user-info'));
+    if (items) {
+     setItems(items);
+    }
+  }, []);
+ 
+var name;
+
+  if(items.name==null){
+
+     name='Login/Signup  '
+   
+  }
+   
+else
+name=items.name
+
+
 
   return (
     <div className="navbarbody d-flex align-items-center sticky-top">
@@ -86,9 +110,9 @@ export default function Navbar(props) {
 
 
         <div className="d-flex  linksnav">
-        <Link to="/under-development" className="p-2"><i className="fas fa-shopping-bag"><span className="counterproduct">0</span></i><br></br><span>Cart</span></Link>
+        <Link to="/cart" className="p-2"><i className="fas fa-shopping-bag"><span className="counterproduct">0</span></i><br></br><span>Cart</span></Link>
         <Link to="/under-development" className="p-2"><i className="fa-solid fa-heart"><span className="counterproduct">0</span></i><br></br><span>Wishlist</span></Link>
-        <Link to="/login" className="p-2"><i className="fas fa-user"></i><br></br><span>Profile</span></Link>
+        <Link to="/login" className="p-2"><i className="fas fa-user"></i><br></br><span id="profile">{name}</span></Link>
 
         
         </div>

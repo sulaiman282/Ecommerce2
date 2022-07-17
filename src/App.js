@@ -27,6 +27,9 @@ import Contactus from "./Components/pages/Contactus";
 import Blog from "./Components/pages/Blog";
 import Hotproductdetails from "./Components/Assets/Hotproductdetails";
 import Anyproductdetails from "./Components/Assets/Anyproductdetails";
+import Cart from "./Components/Assets/Cart";
+
+
 
 
 
@@ -112,7 +115,7 @@ function App() {
           <Route path="/blog" element={<div><Blog mode={mode}/></div>} />
 
 
-
+          <Route path="/cart" element={<div><Cart/></div>} />
 
 
 

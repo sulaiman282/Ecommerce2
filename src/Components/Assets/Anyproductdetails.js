@@ -77,9 +77,9 @@ export default function Anyproductdetails(props) {
           </div>
         </div>
   
-        <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 textdescriptionbody  ">
+        <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 textdescriptionbody  mt-5">
        
-          <div className=" ps-5 pe-5">
+          <div className=" ps-5 pe-5 mt-3">
             <h3
               className="fw-bold"
               style={{ color: props.mode === "dark" ? "black" : "white" }}

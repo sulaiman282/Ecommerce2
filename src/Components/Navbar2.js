@@ -1,8 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../Css/navbar2.css";
 import {Link } from "react-router-dom";
 
 export default function Navbar2() {
+
+
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    const items = JSON.parse(localStorage.getItem('user-info'));
+    if (items) {
+     setItems(items);
+    }
+  }, []);
+ 
+var name;
+
+  if(items.name==null){
+
+     name='Login/Signup  '
+   
+  }
+   
+else
+name=items.name
+
   return (
     <div className="navbar2body d-flex align-items-center">
       <div className="container d-flex justify-content-between ">
@@ -146,7 +168,7 @@ export default function Navbar2() {
             </li>
             <li>
             <Link to="/login">
-              <i className="fas fa-user pe-2"></i>Login/Signup
+              <i  className="fas fa-user pe-2"></i>{name}
             </Link>
           </li>
           </ul>

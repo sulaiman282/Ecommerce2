@@ -59,7 +59,7 @@ export default function Signup() {
       localStorage.setItem("user-info", JSON.stringify(result));
       notify();
       await new Promise(resolve => setTimeout(resolve, 5000));
-      history("/login");
+      history("/home");
      
      
     }
